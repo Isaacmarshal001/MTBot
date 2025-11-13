@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"
+  publish = "."
+
+[[scheduled]]
+  command = "netlify functions:invoke send_greet"
+  cron = "0 7 * * *" # runs daily at 7:00 UTC+0 (~8am Nigeria)
